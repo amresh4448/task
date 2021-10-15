@@ -95,6 +95,7 @@ html{
 }
 /* close menu btn styling */
 
+
 /* Home section styling */
 .home{
     display: flex;
@@ -169,7 +170,7 @@ section .title{
     font-family: 'ubantu', sans-serif;
 }
 section .title::before{
-    content:'--';
+    content:'';
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -179,17 +180,48 @@ section .title::before{
     transform: translateX(-50%);
 }
 /* About section styling */
-
-
-.about .title::after{
-    content: "who i am";
-
+ section{
+    padding: 50px 0;
 }
+.about, .servies{
+    font-family: 'poppins', sans-serif;
+}
+/* .about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom:60px;
+    padding: 20px;
+    font-family: 'ubantu', sans-serif;
 
+} 
+
+ .about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 10px;
+    height: 3px;
+    background: #111;
+    transform: translate(-50%);
+} 
+ .about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translate(-50%);
+
+}  */
 .about .about-content,
     .servies .serv-content{
 
-    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -251,7 +283,7 @@ section .title::before{
 .servies .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "";
 }
 .servies .serv-content .card{
     width: calc(33% - 20px);
@@ -287,7 +319,7 @@ section .title::before{
 }
 /* skill section styling */
 .skills .title::after{
-    content: "what i know";
+    content: "";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -318,7 +350,7 @@ section .title::before{
 
 
 
-.skills .skills-content .right bars{
+.skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
 .skills .skills-content .right .info{
@@ -364,7 +396,7 @@ section .title::before{
 /* teams section Styling */
 
 .teams .title::after{
-    content: "who with me";
+    content: "";
 }
 .teams .carousel .card{
     background: #222;
@@ -439,7 +471,7 @@ section .title::before{
 /* Conatct section Styling here */
 
 .contact .title::after{
-    content: "get in touch";
+    content: "🤙";
 }
 .contact .contact-content .column{
         width: calc(50% - 30px);
@@ -462,7 +494,6 @@ section .title::before{
 }
  .contact .contact-content .row .info{
     margin-left: 30px;
-
 }
 .contact .contact-content .row i{ 
     font-size: 25px;
@@ -474,6 +505,11 @@ section .title::before{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
+
+.contact .right form .fields{
+    display: flex;
+}
+
 .contact .right form .field,
 .contact .right form .fields .field{
     height: 45px;

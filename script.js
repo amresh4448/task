@@ -3,7 +3,7 @@ $(document).ready(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
-            $('navbar').removeClass("sticky");
+            $('.navbar').removeClass("sticky");
         }
         if(this.scroll > 500){
             $('.scroll-up-btn').addClass("show");
@@ -21,6 +21,23 @@ $('.menu-btn').click(function(){
     $('.navbar .menu').toggleClass("active");
     $('.menu-btn i').toggleClass("active");
 });
+// Typing animation script
+var typed = new Typed(".typing", {
+    strings: ["Software Devloper", "font-end Devloper", "Back-end Devloper", "Mern stack"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+// // Typing animation script
+var typed = new Typed(".typing-2", {
+    strings: ["Software Devloper"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop: true,
+});
+
+
 // owl carousel script 
 $('.carousel').owlCarousel({
     margin:20,
